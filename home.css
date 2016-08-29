@@ -1,0 +1,109 @@
+#head{
+    position: fixed;
+    background-color: black;
+    height: 20%;
+/*    transform: translateY(-10%);*/
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#logo{
+    position: fixed;
+    left: 0px;
+    top: 0%;
+    left: 0px;
+    height: 20%;
+    width: 30%;
+    background-image: url(logo-virado.png);
+    background-size: cover;
+    transition: width 2s, height 2s, transform 2s;
+/*    transition-delay: width 2s, height 2s, transform 15s;*/
+}
+
+/*
+#head:hover{
+    position: fixed;
+    background-color: black;
+    height: 10%;
+    transform: translateY(-10%);
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+*/
+
+#head-branco{
+    position: fixed;
+    background-color: white;
+    height: 12%;
+/*    transform: translateY(6%);*/
+    width: 100%;
+    left: 0px;
+    top: 4%;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+/*
+#head-branco:hover{
+    position: fixed;
+    background-color: white;
+    height: 6%;
+    transform: translateY(6%);
+    width: 100%;
+    left: 0px;
+    top: 2%;
+}
+*/
+
+#head-vermelho{
+    position: fixed;
+    background-color: darkred;
+    height: 10%;
+    width: 100%;
+    left: 0px;
+    top: 5%;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+/*
+#head-vermelho:hover{
+    position: fixed;
+    background-color: darkred;
+    height: 5%;
+    width: 100%;
+    left: 0px;
+    top: 2.5%;
+}
+*/
+
+#nome{
+    position: fixed;
+    left: 30%;
+    height: 10%;
+    width: 50%;
+    top: 5%;
+    color: aliceblue;
+    font-size: 60px;
+    font-family: "Agency FB", "Consolas";
+    transition: height 2s, left 2s, font-size 2s, transform 2s;
+/*    background-color: darkgoldenrod;*/
+
+}
+
+
+#corpo{
+    
+    background-color: white;
+    height: 5000px;
+    width: 60%;
+    top: 70px;
+    bottom: 0px;
+}
+body{
+/*    background-color: 191919;*/
+    background-image: url(degrade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
