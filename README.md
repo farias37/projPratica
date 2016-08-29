@@ -1,0 +1,2 @@
+# projPratica
+Projeto sócio torcedor
