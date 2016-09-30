@@ -7,6 +7,7 @@
     left: 0px;
     top: 0px;
     transition: width 2s, height 2s, transform 2s;
+    z-index: 50;
 }
 
 #logo{
@@ -19,6 +20,7 @@
     background-image: url(logo-virado.png);
     background-size: cover;
     transition: width 2s, height 2s, transform 2s;
+    z-index: 9999;
 /*    transition-delay: width 2s, height 2s, transform 15s;*/
 }
 
@@ -41,7 +43,8 @@
 /*    transform: translateY(6%);*/
     width: 100%;
     left: 0px;
-    top: 4%;
+    top: 2%;
+    z-index: 400;
     transition: width 2s, height 2s, transform 2s;
 }
 
@@ -63,8 +66,9 @@
     height: 10%;
     width: 100%;
     left: 0px;
-    top: 5%;
+    top: 3%;
     transition: width 2s, height 2s, transform 2s;
+    z-index: 450;
 }
 
 /*
@@ -80,16 +84,154 @@
 
 #nome{
     position: fixed;
+    
     left: 30%;
     height: 10%;
     width: 50%;
-    top: 5%;
+    top: 3%;
     color: aliceblue;
     font-size: 60px;
     font-family: "Agency FB", "Consolas";
     transition: height 2s, left 2s, font-size 2s, transform 2s;
 /*    background-color: darkgoldenrod;*/
+    background-image: url(porussia-dortmund.png);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    z-index: 460;
+}
 
+#menu{
+    position: fixed;
+    right: 1%;
+    height: 6%;
+/*    background-color: aqua;*/
+    top: 14%;
+    left: 28%;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, opacity 2s;
+    z-index: 450;
+}
+
+#menu-login{
+    position: fixed;
+    width: 8%;
+    left: 28%;
+    height: 6%;
+    top: 14%;
+    color: aliceblue;
+    font-family: candara;
+    font-size: 270%;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s, background-color 2s, opacity 2s;
+/*    background-color: fuchsia;*/
+    text-align: center;
+    
+}
+
+#login-menu{
+    position: fixed;
+    width: 10%;
+    left: 28%;
+    height: 6%;
+    top: 14%;
+    color: darkslategrey;
+    font-family: candara;
+    font-size: 45px;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s, background-color 2s;
+    background-color: hotpink;
+    text-align: center;
+}
+
+#menu-loja{
+    position: fixed;
+    width: 7%;
+    left: 37%;
+    height: 6%;
+    top: 14%;
+    color: aliceblue;
+    font-family: candara;
+    font-size: 270%;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s, background-color 2s, opacity 2s;
+/*    background-color: fuchsia;*/
+    text-align: center;
+    line-height: ;
+}
+
+#loja-menu{
+     position: fixed;
+    width: 10%;
+    left: 35%;
+    height: 6%;
+    top: 14%;
+    color: black;
+    font-family: candara;
+    font-size: 45px;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s;
+    background-color: fuchsia;
+    text-align: center;
+}
+
+#menu-planos{
+    position: fixed;
+    width: 10%;
+    left: 45%;
+    height: 6%;
+    top: 14%;
+    color: aliceblue;
+    font-family: candara;
+    font-size: 270%;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s, background-color 2s, opacity 2s;
+/*    background-color: fuchsia;*/
+    text-align: center;
+}
+
+#menu-contato{
+    position: fixed;
+    width: 13%;
+    right: 1%;
+    height: 6%;
+    top: 14%;
+    color: aliceblue;
+    font-family: candara;
+    font-size: 270%;
+    transition: height 2s,  font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s, background-color 2s, right 2s, left 2s, opacity 1s;
+/*    background-color: fuchsia;*/
+    text-align: center;
+}
+
+#menu-cadastro{
+    position: fixed;
+    width: 14%;
+    left:56%;
+    height: 6%;
+    top: 14%;
+    color: aliceblue;
+    font-family: candara;
+    font-size: 270%;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s, background-color 2s, opacity 1s;
+/*    background-color: fuchsia;*/
+    text-align: center;
+}
+
+#menu-parceiros{
+    position: fixed;
+    width: 14%;
+    left:71%;
+    height: 6%;
+    top: 14%;
+    color: aliceblue;
+    font-family: candara;
+    font-size: 270%;
+    transition: height 2s, left 2s, font-size 2s, transform 2s, top 2s,
+        width 2s, color 2s, background-color 2s, opacity 1s;
+/*    background-color: fuchsia;*/
+    text-align: center;
 }
 
 
@@ -97,13 +239,76 @@
     
     background-color: white;
     height: 5000px;
-    width: 60%;
-    top: 70px;
+    width: 90%;
+    left: 5%;
+    top: 10%;
     bottom: 0px;
 }
 body{
 /*    background-color: 191919;*/
-    background-image: url(degrade.png);
+}
+
+#pic-time{
+    position: absolute;
+    height: 80%;
+    width: 49.5%;
+    top: 20%;
+    /*background-color: pink;*/
+    background-image: url(time2.jpg);
+    background-size: cover;
+}
+
+#img-comeco{
+    position: absolute;
+    height: 80%;
+    width: 49.5%;
+    top: 20%;
+    right: 0px;
+    /*background-color: pink;*/
+    background-image: url(Penguins.jpg);
+    background-size: cover;   
+}
+
+#tudo{
+    position: absolute;
+    bottom: 30px;
+    top: 0%;
+    
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    background-image: url(degrade-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+#fundo{
+    position: absolute;
+    height: 500%;
+    width:100%;
+    left: 0px;
+    /*background-image: url(degrade-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: A20D2A;
+}
+#rodape{
+    position: absolute;
+    bottom: 0px;
+    height: 5%;
+    width: 100%;
+    left: 0px;
+    background-color: 3F0000;
+}
+#logo-rodape{
+    position: absolute;
+    width: 118px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 123px;
+    top: -35%;
+    background-image: url(logo-pd15.png);
+    background-size: 100%, 100%;
 }
