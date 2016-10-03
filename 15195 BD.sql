@@ -16,12 +16,6 @@ categoriaPlano varchar(100) not null,
 formaPagamento varchar(100) not null,
 )
 
-Create table produto
-(
-codProduto int primary key,
-preco varchar(20)
-)
-
 Create table ingresso
 (
 codProduto int primary key,
