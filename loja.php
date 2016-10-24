@@ -1,7 +1,8 @@
 <html>
 <meta charset="utf-8">
-    <title>Sócio Torcedor Porussia Dortmund</title>
+    <title>Loja Oficial Porussia Dortmund</title>
     <head>
+        
         <!-- Jquery rolagem -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script type="text/javascript">// <![CDATA[
@@ -31,7 +32,7 @@ return false;
 // ]]></script>
         
         
-        <link rel="stylesheet" type="text/css" href="home.css">
+        <link rel="stylesheet" type="text/css" href="loja.css">
         <link rel="shortcut icon" href="favicon-1.png">
         <script type="text/javascript" src="home.js"></script>
         
@@ -64,9 +65,7 @@ return false;
 
         <div id="fundo">
             <div id="rodape">
-              <a name="Parceiros">
-                  <div id="logo-rodape"></div>
-                </a>
+                <div id="logo-rodape"></div>
                 <div id="escrito-parceiros">Parceiros:</div>
                     <div id="parceiros">
                         <a href="http://www.matera.com/br/"><div id="matera"></div></a>
@@ -78,20 +77,12 @@ return false;
         </div>
         
         <div id="tudo">
-            <div id="slogan"></div>
-        <div id="pic-time"></div>
-        <div id="caixa-cadastro">CADASTRE-SE JÁ!
-            
-                <form method="post" action="conexao.php">
-                    <input class="email" type="text" placeholder="e-mail">
-                    <input class="cpf" type="text" placeholder="CPF">
-                    <input class="password" type="password" placeholder="Senha">
-                    <input type="submit" value="Seja sócio" class="submit">
-                    <div id="login-btn" onclick="loginShow()">JÁ SOU SÓCIO</div>
-                </form>
-            
-        </div>
+            <div id="slogan">Loja Oficial do time</div>
+<!--        <div id="pic-time"></div>-->
+       
     </div>
+        
+        <div id="produtos"></div>
 
 
 
@@ -104,18 +95,20 @@ return false;
                 </div>
             </div>
             <div id="menu" onmouseover="menu()" onmouseout="foramenu()">
-                    <div id="menu-login" onmouseover="menuLogin()">LOGIN</div>
-                <a href="loja.php"> 
-                    <div id="menu-loja" onmouseover="menuLoja()">LOJA</div>  
-                </a>
-                    <div id="menu-planos" onmouseover="menuPlanos()">PLANOS</div>
-                    <div id="menu-cadastro" onmouseover="menuCadastro()">CADASTRO</div>
-                    <a href=#Parceiros>
-                        <div id="menu-parceiros" onmouseover="menuParceiros()">PARCEIROS</div>
-                </a>
-                <div id="menu-contato" onmouseover="menuContato()" onclick="contatoTela()">CONTATO</div>
+                <div id="menu-login" onmouseover="menuLogin()">LOGIN</div>
+                <div id="menu-loja" onmouseover="menuLoja()">LOJA</div>
+                <div id="menu-planos" onmouseover="menuPlanos()">PLANOS</div>
+                <div id="menu-cadastro" onmouseover="menuCadastro()">CADASTRO</div>
+                <div id="menu-parceiros" onmouseover="menuParceiros()">PARCEIROS</div>
+                <div id="menu-contato" onmouseover="menuContato()">CONTATO</div>
+                
+                
             </div>
-            </div></div>
+            
+            </div>
+            <div id="menuCategorias"></div>
+        </div>
+        
         <div id="logo"></div>
 
 

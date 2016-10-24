@@ -1,7 +1,14 @@
+var souSocio;
+
+function font(){
+    document.getElementById("menu-planos").style.minWidth = document.getElementById("menu-planos").style.width;
+//    document.getElementById("menu-planos").style.backgroundColor = "red";
+}
 
 function barraMenu()
 {
     //quando desce o scroll
+
     document.getElementById("head").style.height = "10%";
 //    document.getElementById("logo").style.backgroundImage = "url('logo-pd15.png')";
     document.getElementById("logo").style.height = "10%";
@@ -46,6 +53,13 @@ function barraMenu()
     document.getElementById("menu-contato").style.top = "0%";
     document.getElementById("menu-contato").style.text = "0%";
     
+    document.getElementById("menuCategorias").style.bottom = "85%";
+
+    // if (souSocio == 1)
+    // document.getElementById("login").style.position = "scrollY";
+
+
+    
     
     //quando o scroll volta para o topo
     if (window.scrollY < 101)
@@ -73,6 +87,7 @@ function barraMenu()
         document.getElementById("menu-cadastro").style = "menu-cadastro";
         document.getElementById("menu-parceiros").style = "menu-parceiros";
         document.getElementById("menu-contato").style = "menu-contato";
+                document.getElementById("menuCategorias").style.bottom = "75%";
         
     }
     
@@ -157,3 +172,30 @@ function foramenu(){
     document.getElementById("menu-contato").style.opacity = 1;
     document.getElementById("menu").style.opacity = 1;
 }
+
+function loginShow(){
+    document.getElementById("login").style.top = "30%";
+    document.getElementById("login").style.backgroundColor = "white";
+    document.getElementById("login").style.position = "fixed";
+
+    document.getElementById("tela").style.zIndex = "9998";
+    document.getElementById("tela").style.opacity = "0.8";
+    
+    souSocio = 1; // quer dizer que o botao sou socio foi pressionado
+}
+
+function loginSome(){
+    document.getElementById("login").style.top = "-100%";
+    document.getElementById("login").style.backgroundColor = "white";
+    document.getElementById("login").style.position = "absolute";
+
+    document.getElementById("tela").style.zIndex = "0";
+    document.getElementById("tela").style.opacity = "0";
+
+    souSocio = 0; // quer dizer que o botao sou socio foi despressionado
+}
+
+//function contatoTela(){
+// window.screenY = 1000;
+//}
+
