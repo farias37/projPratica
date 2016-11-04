@@ -5,6 +5,8 @@
  */
 package model;
 
+import java.util.Objects;
+
 /**
  *
  * @author u15195
@@ -82,4 +84,56 @@ public class produto {
     public void setEndImagem2(String endImagem2) {
         this.endImagem2 = endImagem2;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 19 * hash + this.codProduto;
+        hash = 19 * hash + Objects.hashCode(this.nome);
+        hash = 19 * hash + Float.floatToIntBits(this.preco);
+        hash = 19 * hash + Objects.hashCode(this.descricao);
+        hash = 19 * hash + Objects.hashCode(this.endImagem);
+        hash = 19 * hash + Objects.hashCode(this.endImagem2);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final produto other = (produto) obj;
+        if (this.codProduto != other.codProduto) {
+            return false;
+        }
+        if (Float.floatToIntBits(this.preco) != Float.floatToIntBits(other.preco)) {
+            return false;
+        }
+        if (!Objects.equals(this.nome, other.nome)) {
+            return false;
+        }
+        if (!Objects.equals(this.descricao, other.descricao)) {
+            return false;
+        }
+        if (!Objects.equals(this.endImagem, other.endImagem)) {
+            return false;
+        }
+        if (!Objects.equals(this.endImagem2, other.endImagem2)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "produto{" + "codProduto=" + codProduto + ", nome=" + nome + ", preco=" + preco + ", descricao=" + descricao + ", endImagem=" + endImagem + ", endImagem2=" + endImagem2 + '}';
+    }
+    
+    
 }

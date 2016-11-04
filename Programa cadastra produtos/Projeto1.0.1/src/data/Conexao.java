@@ -7,6 +7,7 @@ package data;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.Objects;
 
 /**
  *
@@ -27,4 +28,36 @@ public class Conexao {
    public Connection getConexao(){
        return conexao;
    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 73 * hash + Objects.hashCode(this.conexao);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Conexao other = (Conexao) obj;
+        if (!Objects.equals(this.conexao, other.conexao)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Conexao{" + "conexao=" + conexao + '}';
+    }
+   
+   
 }

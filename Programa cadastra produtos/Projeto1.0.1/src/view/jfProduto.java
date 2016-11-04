@@ -6,6 +6,7 @@
 package view;
 
 import data.produtoData;
+import java.util.Objects;
 import javax.swing.JOptionPane;
 import model.produto;
 
@@ -506,4 +507,44 @@ public class jfProduto extends javax.swing.JFrame {
         
         return true;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 83 * hash + Objects.hashCode(this.DAO);
+        hash = 83 * hash + Objects.hashCode(this.objProd);
+        hash = 83 * hash + this.acao;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final jfProduto other = (jfProduto) obj;
+        if (this.acao != other.acao) {
+            return false;
+        }
+        if (!Objects.equals(this.DAO, other.DAO)) {
+            return false;
+        }
+        if (!Objects.equals(this.objProd, other.objProd)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "jfProduto{" + "DAO=" + DAO + ", objProd=" + objProd + ", acao=" + acao + '}';
+    }
+    
+    
 }

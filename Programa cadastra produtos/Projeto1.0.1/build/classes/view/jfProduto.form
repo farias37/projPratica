@@ -68,14 +68,12 @@
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jtPreco" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
                                   <Component id="jtEndImagem" alignment="0" pref="286" max="32767" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="jtCodProduto" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jbPesquisar" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="jtNome" min="-2" pref="162" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jtCodProduto" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jbPesquisar" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="jtNome" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
                                   <Component id="jtDescricao" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
